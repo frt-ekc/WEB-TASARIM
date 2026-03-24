@@ -1,11 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="tr" manifest="cache.manifest">
+ <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>dokuz eylul univercity</title> #web sitenin içeriğini anlatacak title
+  <title>dokuz eylul univercity</title> #web sitenin içeriğini
+ anlatacak title
+  <meta name="Description" content="Dokuz eylül resmi web sitesidir">
+  <meta name="keywords" content="DEÜ,Dokuz eylül üniversitesi,9 eylül üniversitesi">
+  <meta name="googlebot" content="noarchive"/>
+  <meta name="revisit-after" content="1 days">
+  <meta name="copyright" content="2025-2026 Dokuz eylül üniversitesi"/>
+  <style src="style.css">
+  </style>
 </head>
 <body>
-  
-</body>
-</html>
+    <P>Bu bir paragraftir</P>
+    <P>Buda ikinci paragraftir</P>
+    <h1>bu bir headingtir</h1>
+    <h2>bu bir h2</h2>
+    <h3>bu bir h3</h3>
+    <h4>bu bir h4</h4> 
+    <h5>bu bir h5</h5>
+    <pre>      merhaba dünya</pre>
+    <abbr title="yönetim bilişim sistemleri">YBS</abbr>
+    H<sub>2</sub>O
+    X<sup>2</sup>Y
+    <b>Bold</b> #google yandex gibi arama motorları strong tercih ediyor i ve em içinde aynı
+    <strong>Strong</strong>
+    <i>italik</i>
+    <em>italik</em> 
+    <img src="./image/bridgestone kopyası.svg" width="150px" height="150" alt="siyah köpek">
+    <img src="https://picsum.photos/seed/picsum/200/300
+" alt="karli dağ manzarasi"> -->
+<h1 id="baslik1">sirasiz liste</h1> <!--başa dönmek için nesne tanımladık başlık1-->
+
+
+<ul>
+  <li>liste elemani 1</li>
+  <li>liste elemani 2</li>
+  <li>
+    <ul>
+      <li>eleman 1</li>  <!--alt liste olarak açtık-->
+
+      <li>eleman 2</li>
+    </ul>
+  </li>
+</ul>
+<h1>sirali liste</h1>
+<ol>
+  <li>liste elemani 1</li>
+  <li>liste elemani 2</li>
+</ol>
+<a href="https://www.deu.edu.tr">D.E.Ü</a>
+<a href="iletişim.html">İLETİŞİM SAYFASI</a> <!--İLETİŞİM.HTML İLE BAĞLADIK REFERANSLA-->
+<a href="#baslik1">Başa dön</a>
+<a href="korkutyms@gmail.com">mail</a>
+<a href="https://deu.edu.tr" target="_blank" rel="deü sayfasi linki"><img src="./image/deü.png"></a> <!--target eklersek farklı sekmede açar rel link üstüne gelindiğinde link hakkında bilgi verir-->
+<table border="1">
+  <tr>
+    <th>adi</th> <!--td ve th etiketi sayisi her zaman eşit olmalı-->
+    <th>soyadi</th> 
+    <th>okul</th>
+  </tr>
+  <tr>
+    <td>can</td>
+    <td>aydin</td>
+    <td>deü</td>
+  </tr>
+  <tr>
+    <td>firat</td>
+    <td>ekici</td>
+    <td>deü</td>
+  </tr>
+  <tr>
+    <td colspan="3">sonuç</td>
+  </tr>
+  <tr>
+    <td colspan="2">can aydin</td> <!--colspan ile tabloda  atlanacak boşluk sayısı uygulama yap anlarsın-->
+    <td>deü</td>
+  </tr>
+</table>
+
+<iframe src="https://otorandevusistemi-y2uz.vercel.app" width="%100" height="%100" frameborder="0"></iframe> 
+<form action="gonder.js" method="post">
+  <label for="adi">adi:</label>
+  <input type="text" id="adi" name="adi" placeholder="adınızı giriniz" maxlength="255"> <!-- id içi farklı sunucuda çalışacağı için türkçe karakterli olmamalı bunun yanında ad class vb. içinde geçerlidir -->
+  <label for="soyadi">soyadi:</label>
+  <input type="text" id="soyadi" name="soyadi" placeholder="soyadinizi giriniz" maxlength="255">
+  <input type="hidden" id="gelen_ip_address">
+   <label for="sifre">sifre:</label>
+  <input type="password" id="sifre">
+  <input type="checkbox" id="secim">
+  <input type="radio" id="kadin" name="cinsiyet" value="kadin">
+  <label>kadin</label>
+  <input type="radio" id="erkek" name="cinsiyet" value="erkek">
+  <label>erkek</label>
+  <label>adres</label>
+  <textarea></textarea>
+  <input type="submit" value="kaydet">
+  <input type="reset" value="temizle">
+  <select id="secenek">
+    <option id="secenek1" value="1">seçenek 1</option>
+    <option id="secenek2" value="2">seçenek 2</option>
+  </select>
+  <input type="date">
+  <input type="color">
+  <input type="email">
+  <input type="number" min="1" max="50">
+  <input type="range" min="0" max="100" step="10">
+  <input type="url" pattern="https://.+">
+</form>
+
+
+<details> </details>
+<article> </article>
+<summary> </summary>
+
+<figure> 
+  <img src="./img/resim.jpg">
+  <figcaption>siyah tatli minik köpek</figcaption>
+</figure>
+<video autoplay loop="loop">
+  <source src="video.mp4" type="video.mp4">
+</video>
+
+<img src="./img/resim.jpg 1024w, ./img/resim.jpg 640w">
+</body> 
+</html> <!--#html ile başlar html ile biter-->
+
